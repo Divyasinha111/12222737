@@ -122,7 +122,8 @@ Then visit: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-snapshot :- ![alt text](image.png)
+snapshot :-<img width="1872" height="858" alt="image" src="https://github.com/user-attachments/assets/064418e0-d467-4335-a267-4044e011e93b" />
+
 
 ## 🔗 Useful Links
 
