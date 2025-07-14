@@ -1,0 +1,28 @@
+/* Frontend Test Submission/styles/Statistics.css */
+.stats-container, .stats-container-loading, .stats-container-error {
+  padding: 30px;
+  margin-top: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-align: left; /* Align text left within stats container */
+}
+
+.stats-container-loading, .stats-container-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px; /* Min height for loading/error state */
+}
+
+/* Table specific styles for responsiveness */
+.stats-container .MuiTableContainer-root {
+  margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+  .stats-container .MuiTableCell-root {
+    padding: 8px; /* Reduce padding on small screens */
+    font-size: 0.8rem;
+  }
+}

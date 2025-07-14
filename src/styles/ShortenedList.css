@@ -1,0 +1,15 @@
+/* Frontend Test Submission/styles/ShortenedList.css */
+.shortened-list-container {
+  padding: 30px;
+  margin-top: 40px; /* Space from the form */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.shortened-list-container .MuiListItemText-primary {
+  font-weight: bold;
+}
+
+.shortened-list-container .MuiLink-root {
+  word-break: break-all; /* Ensure long URLs wrap */
+}

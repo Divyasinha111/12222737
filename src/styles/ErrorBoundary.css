@@ -1,0 +1,25 @@
+/* Frontend Test Submission/styles/ErrorBoundary.css */
+.error-boundary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 40px;
+  margin: 50px auto;
+  max-width: 800px;
+  text-align: center;
+  border: 1px solid #ffccbc; /* Light red border */
+  background-color: #ffebee; /* Light red background */
+}
+
+.error-boundary-container h5 {
+  color: #d32f2f; /* Material UI error red */
+}
+
+.error-boundary-container pre {
+  white-space: pre-wrap; /* Ensure pre-formatted text wraps */
+  word-break: break-all;
+  font-size: 0.9em;
+  color: #424242;
+}
