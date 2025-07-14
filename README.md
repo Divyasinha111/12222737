@@ -28,8 +28,7 @@ A modern React frontend for the Affordmed URL Shortener service. Users can short
 
 ## ⚙️ Prerequisites
 
-- Node.js (LTS recommended)
-- npm or Yarn
+- npm 
 
 ---
 
@@ -52,8 +51,7 @@ cd C:\Users\divya\OneDrive\Desktop\new\test1
 
 ```bash
 npm install
-# or
-yarn install
+
 ```
 
 ### 3. Set Up Environment Variables
@@ -77,8 +75,7 @@ Start the development server:
 
 ```bash
 npm start
-# or
-yarn start
+
 ```
 
 Then visit: [http://localhost:3000](http://localhost:3000)
