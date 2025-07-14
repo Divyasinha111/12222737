@@ -1,70 +1,134 @@
-# Getting Started with Create React App
+# Affordmed URL Shortener - Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 📌 Overview
 
-## Available Scripts
+A modern React frontend for the Affordmed URL Shortener service. Users can shorten URLs (with optional custom shortcodes and expiry), view statistics, and interact with a backend logging service. Built with usability, error handling, and logging in mind.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🔗 Shorten single or multiple (bulk) URLs (up to 5 at once)
+- 🧾 Custom shortcodes and expiration settings
+- 📊 View URL statistics: clicks, referrers, locations
+- 🔄 Automatic redirection from short links
+- ⚙️ Centralized API calls with error handling
+- 🧩 `ErrorBoundary` for React error capture
+- 🛠️ Integrated frontend logging to backend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Frontend:** React.js, JavaScript (ES6+), CSS
+- **UI Library:** Material-UI
+- **Routing:** React Router DOM
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ⚙️ Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (LTS recommended)
+- npm or Yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Getting Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 1. Clone or Navigate to the Project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+git clone https://github.com/Divyasinha111/12222737.git
+cd 12222737
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+_Or manually:_
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+cd C:\Users\divya\OneDrive\Desktop\new\test1
+```
 
-## Learn More
+### 2. Install Dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm install
+# or
+yarn install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 3. Set Up Environment Variables
 
-### Code Splitting
+Create a `.env` file in the root directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```env
+REACT_APP_AFFORDMED_EMAIL=your-email@example.com
+REACT_APP_AFFORDMED_ROLL_NUMBER=your-roll-number
+REACT_APP_AFFORDMED_NAME=Your Full Name
+REACT_APP_AFFORDMED_ACCESS_CODE=your-access-code
+```
 
-### Analyzing the Bundle Size
+> 💡 Replace placeholders with your actual details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## 🧪 Running the App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Start the development server:
 
-### Advanced Configuration
+```bash
+npm start
+# or
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Then visit: [http://localhost:3000](http://localhost:3000)
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📡 Backend API Endpoints
 
-### `npm run build` fails to minify
+**Base URL:** `http://20.244.56.144/evaluation-service`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+| Endpoint               | Description                     |
+|------------------------|---------------------------------|
+| `/register`            | Register the user               |
+| `/auth`                | Authenticate and get token      |
+| `/shorten`             | Shorten one or more URLs        |
+| `/resolve/:shortCode`  | Resolve and redirect            |
+| `/stats`               | Fetch global statistics         |
+| `/stats/:shortCode`    | Stats for a specific short code |
+| `/logs`                | Send app logs                   |
+
+---
+
+## 🛡️ Error Handling & Logging
+
+- ✅ All API calls use robust error handling and fallback logic.
+- 🧱 Errors in React components are caught by an `ErrorBoundary` and logged.
+- 📤 App logs (`info`, `warn`, `error`, `fatal`) are sent to the backend via `/logs`.
+
+---
+
+## 🤝 Contributing
+
+1. Fork this repository.
+2. Create a feature branch:  
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+3. Commit your changes.
+4. Push to your fork.
+5. Submit a Pull Request.
+
+---
+
+snapshot :- ![alt text](image.png)
+
+## 🔗 Useful Links
+
+- 🔍 **Project Repo:** [https://github.com/Divyasinha111/12222737](https://github.com/Divyasinha111/12222737)  
+- 👤 **GitHub Profile:** [https://github.com/Divyasinha111](https://github.com/Divyasinha111)
+
+---
+
+> Made with ❤️ for the Affordmed evaluation project.
